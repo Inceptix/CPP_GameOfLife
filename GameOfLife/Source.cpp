@@ -3,10 +3,10 @@ using namespace std;
 
 #include "ConsoleEngine.h"
 
-class OneLoneCoder_GameOfLife : public olcConsoleGameEngine
+class GameOfLife : public olcConsoleGameEngine
 {
 public:
-	OneLoneCoder_GameOfLife()
+	GameOfLife()
 	{
 		m_sAppName = L"Game Of Life";
 	}
@@ -182,7 +182,7 @@ int main()
 	srand(clock());
 
 	// Use olcConsoleGameEngine derived app
-	OneLoneCoder_GameOfLife game;
+	GameOfLife game;
 	game.ConstructConsole(160, 100, 8, 8);
 	game.Start();
 
